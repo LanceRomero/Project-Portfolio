@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- Placeholder for your logo -->
+        <div class="logo-placeholder">P</div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>My Projects</h1>
+        <p>
+          Where creativity meets technology. I build elegant digital experiences
+          that inspire and elevate your brand.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">Explore My Work</a>
+          <a href="#about" class="btn secondary-btn">Learn more →</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/image.png" alt="icon" />
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project cards with icons visible by default -->
+        <div class="project-card">
+          <img
+            src="img/image-recog.png"
+            alt="Image Recognition"
+            class="project-icon"
+          />
+          <div
+            class="project-image"
+            style="background-image: url('img/image-recog.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Image Recognition</h3>
+            <p>Made with Teachable Machine to Recognize certain objects.</p>
+            <a href="image_recog/index.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="img/Chatbot.png" alt="Chatbot" class="project-icon" />
+          <div
+            class="project-image"
+            style="background-image: url('img/Chatbot.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Chatbot</h3>
+            <p>Yoda Chatbot made with google generative-ai.</p>
+            <a href="chatbot/index.html" class="project-link">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="img/sentiment.png"
+            alt="Sentiment Analysis"
+            class="project-icon"
+          />
+          <div
+            class="project-image"
+            style="background-image: url('img/sentiment.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Sentiment Analysis</h3>
+            <p>
+              Tool that analyzes text to determine the emotional tone whether
+              positive, neutral, or negative.
+            </p>
+            <a href="sentiment_analysis/index.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img
+            src="img/expert-system.png"
+            alt="Expert System"
+            class="project-icon"
+          />
+          <div
+            class="project-image"
+            style="background-image: url('img/expert-system.png')"
+          ></div>
+          <div class="project-overlay">
+            <h3>Expert System</h3>
+            <p>
+              A knowledge-based system that uses rules and logic to simulate the
+              decision-making ability of a human expert.
+            </p>
+            <a href="expert_system/index.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Made by: Lance Christian F. Romero BSCS 301
+          </p>
+          <p>
+            CSELC03C - CS ELECTIVE 3: ARTIFICIAL INTELLIGENCE
+          </p>
+        </div>
+        <!-- <div class="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>UI/UX Design</li>
+          </ul>
+        </div> -->
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h2>Get In Touch</h2>
+          <p>
+            Feel free to reach out for collaborations or just a friendly hello!
+          </p>
+          <p class="email">lanceromero1029@gmail.com</p>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Lans109" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <div class="page-transition">
+      <img class="transition-icon" src="" alt="Project" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
