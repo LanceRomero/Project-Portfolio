@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Reviews | Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <a href="../index.html" class="back-to-home" onclick="sessionStorage.setItem('skipTransition', 'true');">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <div class="container">
+        <header>
+            <h1>Spotify Review Experience</h1>
+        </header>
+
+        <section class="review-section">
+            <h2>Share Your Thoughts</h2>
+            <div class="input-container">
+                <textarea id="reviewInput" placeholder="Write your review here" rows="5"></textarea>
+                <button id="submitBtn" onclick="predictSentiment()">Predict Sentiment</button>
+            </div>
+        </section>
+
+        <!-- Loading Animation -->
+        <section id="loadingSection" class="loading-section hidden">
+            <div class="loader"></div>
+            <p>Analyzing your review...</p>
+            <div id="timer">0</div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="results-section">
+            <h2>Analysis Result</h2>
+            <div id="results">
+                <div class="result-placeholder">Results</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
