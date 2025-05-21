@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoda Chatbot</title>
+</head>
+<body>
+    <a href="../index.html" class="back-to-home" onclick="sessionStorage.setItem('skipTransition', 'true');">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <div class="chatbot-cont">
+        <div class="chat-header">
+            <div class="avatar">
+                <img src="Yoda_icon.png" alt="Yoda" width="50" height="50" style="border-radius: 50%; display: block;">   
+            </div>
+            <div class="header-info">
+                <h1>Master Yoda</h1>
+                <div class="online-status">
+                    <span class="status-dot"></span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </div>
+        <div class="suggestion-container">
+            <div class="suggestions"></div>
+        </div>
+        <div class="chat-cont">
+        </div>
+        <div class="typing-cont">
+            <div class="typing-textarea">
+                <textarea id="chat-input" spellcheck="false" placeholder="Ask Yoda..." required></textarea>
+                <button id="send-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11Z" />
+                        <path d="M6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="mainmodule.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
